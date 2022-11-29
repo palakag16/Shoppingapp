@@ -1,0 +1,130 @@
+.body_wrapper {
+  height: 100vh;
+  padding: 1rem 2rem;
+  background-color: #edf6ff;
+}
+.login_wrapped {
+  width: 40%;
+  margin-top: 50px;
+  background-color: #fff;
+  box-shadow: 0px 30px 36px #557da526;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.fs_22 {
+  font-size: 22px !important;
+  font-family: Helvetica, sans-serif !important;
+}
+.fs_14 {
+  font-size: 14px !important;
+  font-family: Helvetica, sans-serif !important;
+}
+.fs_18 {
+  font-size: 18px !important;
+  font-family: Helvetica, sans-serif !important;
+}
+
+
+.login_wrapped {
+  width: 40%;
+  margin-top: 50px;
+  background-color: #fff;
+  box-shadow: 0px 30px 36px #557da526;
+  border-radius: 20px;
+  padding: 30px;
+}
+.flex_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color_dark {
+  color: #303f60;
+  font-family: Helvetica, sans-serif !important;
+}
+.prodcard_box{
+  width:13rem;
+  border:1px solid rgba(26, 37, 60, 1);
+  display:grid;
+  place-items: center;
+  background-color: white;
+}
+.prodcard_box img{
+background-size: contain;
+}
+.add_delbox{
+  height:45px;
+  width:100%;
+  display: grid;
+  place-items: center;
+  background-color: #303f60;
+  color:white;
+  font-size: 14px;
+  cursor:pointer
+}
+.title_cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list_title{
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  color: #303f60;
+  margin:30px 0; 
+}
+.grid_layout{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 0.5rem;
+  grid-row-gap: 1rem;
+  margin: 1rem 0;
+  margin-bottom: 5rem;
+}
+/* new */
+@media only screen and (max-width: 600px) {
+  
+  .login_wrapped{
+    width:65%
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  
+  .login_wrapped{
+    width:80%
+  }
+ 
+}
+@media only screen and (min-width: 280px) and (max-width: 450px) {
+  .grid_layout{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .title_cart{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .grid_layout{
+    grid-template-columns: 47% 47%;
+  }
+  .prodcard_box {
+    width: 13rem;
+}
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .grid_layout{
+    grid-template-columns: 33% 33% 33%;
+  }
+  
+}
+@media only screen and (min-width: 801px) and (max-width: 1080px) {
+  .grid_layout{
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  
+}
